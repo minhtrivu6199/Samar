@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    color:#636363;
+    font-family: Roboto,sans-serif;
+    font-weight:400;
+    line-height:1.6;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.btn-grad {
+    padding:20px 35px;
+    font-size:15px;
+    font-weight:500;
+    background-image:linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    background-size:200%;
+    border:1px solid transparent;
+    transition:all .5s;
+    border-radius:30px;
+    color:#fff;
+    cursor:pointer;
+    outline:0;
+    text-transform:uppercase;
+    line-height:1.2
+}
+
+.btn-grad:hover {
+    background-position: right center;
+}
+
+
+/* HEADER */
+.header {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-content nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-content ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+.header .header-content li {
+    padding: 55px 15px;
+}
+
+.header .header-content li a {
+    color:#070120;
+    text-transform:capitalize;
+    font-size:15px;
+    font-weight:500;
+    transition:all .5s
+}
+
+.header .header-content li:hover a {
+    color:#f55f8d;
+}
+
+.header .header-content span {
+    display: inline-block;
+}
+
+.header .header-content li:hover span {
+    animation: MoveUpDown 0.3s forwards;
+}
+
+
+.header .header-content i {
+    font-size: 9px;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+
+
+
+@keyframes MoveUpDown {
+    49% {
+        transform:translateY(100%)
+    }
+    50% {
+        opacity:0;
+        transform:translateY(-100%)
+    }
+    51% {
+        opacity:1
+    }
+}
